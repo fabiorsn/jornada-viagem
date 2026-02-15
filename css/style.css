@@ -1,3 +1,10 @@
+/* BREAKPOINTSS: pontos de corte comuns para aplicar estilos
+  320px -> celulares pequenos
+  768px -> tablets
+  1024px -> laptops
+  1440px -> desktops grandes
+ */
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
