@@ -7,26 +7,24 @@ header {
   padding: 37px 48px;
 }
 
-.logo-homepage {
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-}
-
 .logo-homepage img {
+  display: inline-block;
   width: 64px;
   height: 64px;
 }
 
-.navegation-menu {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
+.div-navegation-menu {
+  display: flex;
 }
 
 .navegation-menu-img {
+  display: inline-block;
   width: 32px;
   height: 32px;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
 }
 
 .navegation-menu-list {
