@@ -8,7 +8,6 @@ header {
 }
 
 .logo-homepage {
-  display: inline-block;
   width: 64px;
   height: 64px;
 }
@@ -19,7 +18,6 @@ header {
 }
 
 .navegation-menu {
-  display: inline-block;
   width: 32px;
   height: 32px;
 }
