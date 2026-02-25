@@ -73,8 +73,8 @@ input[type="checkbox"]:checked ~ nav {
     padding: 37px 60px;
   }
 
-  .div-navegation-menu label,
-  .div-navegation-menu input {
+  .navegation-menu label,
+  .navegation-menu input {
     display: none;
   }
 
