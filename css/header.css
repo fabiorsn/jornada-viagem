@@ -11,15 +11,12 @@ header {
   background-color: var(--background-tertiary-color);
 }
 
-.img-homepage-mobile {
+.home-img-logo {
   width: 64px;
   height: 64px;
-}
 
-.img-homepage-desktop {
-  display: none;
-
-  height: 64px;
+  background: url("../img/Símbolo_white.png") no-repeat;
+  background-size: cover;
 }
 
 .navegation-menu {
@@ -101,12 +98,12 @@ input[type="checkbox"]:checked ~ nav {
     padding: 37px 120px;
   }
 
-  .img-homepage-desktop {
-    display: block;
-  }
+  .home-img-logo {
+    height: 64px;
+    width: 264px;
 
-  .img-homepage-mobile {
-    display: none;
+    background: url("../img/Logo-branco.png") no-repeat;
+    background-size: cover;
   }
 }
 
