@@ -105,5 +105,4 @@ header {
 
 .navegation-list li a:hover {
   color: var(--primary-color);
-  font-weight: var(--titles-weight);
 }
