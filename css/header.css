@@ -1,22 +1,19 @@
 header {
   display: flex;
   position: relative;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  width: 100vw;
+  width: 100%;
   padding: 37px 48px;
 
   background-color: var(--background-tertiary-color);
 }
 
-.home-img-logo {
-  width: 64px;
+.logo-img {
   height: 64px;
-
-  background: url("../img/Símbolo_white.png") no-repeat;
-  background-size: cover;
+  width: auto;
+  display: block;
 }
 
 .navegation-menu {
@@ -26,84 +23,75 @@ header {
 .navegation-menu-img {
   width: 32px;
   height: 32px;
+
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked ~ nav {
-  display: block;
+.navegation-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  justify-content: space-between;
 
-  width: 100vw;
   top: 100%;
   left: 0;
+  width: 100%;
+
+  list-style: none;
 
   background-color: var(--background-tertiary-color);
 }
 
-.navegation-menu-list {
-  display: none;
-}
-
-.navegation-menu-option {
+.menu-checkbox:checked ~ .navegation-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
 }
 
-.navegation-menu-option li {
-  margin: 16px 0;
+.navegation-list li {
+  padding: 16px 0;
 }
 
-.navegation-menu-option li a {
-  display: inline-block;
-  flex: 1;
-  margin: 0 auto;
-
-  color: var(--text-secondary-color);
+.navegation-list li a {
   text-decoration: none;
 
   font-size: 1rem;
-  text-align: center;
   font-weight: var(--menu-text-weight);
+  color: var(--text-secondary-color);
 }
+
+/* --- Media Queries (Tablet) --- */
 
 @media screen and (min-width: 768px) {
   header {
     padding: 37px 60px;
   }
 
-  .navegation-menu label,
-  .navegation-menu input {
+  .navegation-menu-label {
     display: none;
   }
 
-  .navegation-menu-list {
-    display: inline-block;
-  }
-
-  .navegation-menu-option {
+  .navegation-list {
+    display: flex;
+    position: static;
     flex-direction: row;
-    width: 467px;
-    justify-content: space-between;
+
+    width: auto;
+    gap: 40px;
   }
 
-  .navegation-menu-option li a {
+  .navegation-list li a {
     font-size: 1.5rem;
   }
 }
+
+/* --- Media Queries (Desktop) --- */
 
 @media screen and (min-width: 1024px) {
   header {
     padding: 37px 120px;
   }
 
-  .home-img-logo {
-    height: 64px;
-    width: 264px;
-
-    background: url("../img/Logo-branco.png") no-repeat;
-    background-size: cover;
+  .logo-img {
+    content: url(../img/desktop/Logo-branco.png);
   }
 }
 
@@ -113,7 +101,9 @@ input[type="checkbox"]:checked ~ nav {
   }
 }
 
-.navegation-menu-option li a:hover {
+/* --- Efeito Hover --- */
+
+.navegation-list li a:hover {
   color: var(--primary-color);
   font-weight: var(--titles-weight);
 }
