@@ -5,3 +5,44 @@
   background: url("../assets/img/mobile/hero-mobile.png") no-repeat;
   background-size: cover;
 }
+
+.text-desc {
+  margin: 88px 24px;
+
+  color: var(--text-primary-color);
+  font-weight: var(--text-weight);
+
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    height: 620px;
+
+    background: url("../assets/img/tablet/hero-tablet.png") no-repeat;
+    background-size: cover;
+  }
+
+  .text-desc {
+    margin: 88px 60px;
+
+    font-size: 2rem;
+    line-height: 150%; /* 150% = 1.5*2rem = 48px current font-size*/
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-img {
+    background: url("../assets/img/desktop/hero-desktop.png") no-repeat;
+    background-size: cover;
+  }
+
+  .text-desc {
+    margin: 104px 120px;
+  }
+}
