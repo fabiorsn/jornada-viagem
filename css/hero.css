@@ -9,7 +9,6 @@
 .text-desc {
   margin: 88px 24px;
 
-  color: var(--text-primary-color);
   font-weight: var(--text-weight);
 
   font-size: 1.25rem;
