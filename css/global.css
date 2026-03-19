@@ -65,3 +65,10 @@ html {
   height: 4px;
   background-color: var(--secondary-color);
 }
+
+@media screen and (min-width: 768px) {
+  .section-titles h2 {
+    font-size: 2rem;
+    line-height: 39px;
+  }
+}
