@@ -118,5 +118,4 @@ input[type="checkbox"]:checked ~ nav {
 
 .navegation-menu-option li a:hover {
   color: var(--primary-color);
-  font-weight: var(--titles-weight);
 }
