@@ -55,20 +55,24 @@
 .japao {
   background: url(../assets/img/mobile/offer-card-japao.png) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .san-andreas {
   background: url(../assets/img/mobile/offer-card-san-andreas.png) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .paraiba {
   background: url(../assets/img/mobile/offer-card-paraiba.png) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .manaus {
   background: url(../assets/img/mobile/offer-card-manaus.png) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
