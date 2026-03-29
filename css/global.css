@@ -52,6 +52,8 @@ html {
 
   gap: 16px;
   padding: 0 24px 32px;
+
+  text-align: center;
 }
 
 .section-titles h2 {
